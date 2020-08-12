@@ -1,0 +1,89 @@
+/* Styling som gäller för hela sidan */
+body {
+  box-sizing: border-box;
+  font-family: Helvetica, "sans serif";
+  color: #ff726c;
+  margin: 0;
+}
+
+/* Knappen */
+
+.button {
+  background-color: white;
+  color: #ff726c;
+  padding: 25px;
+  border-radius: 40px;
+  text-transform: uppercase;
+  text-decoration: none;
+  font-weight: 600;
+}
+
+/* Alla rubriker och texter */
+
+h1 {
+  margin: 20px;
+  font-size: 65px;
+}
+
+h2 {
+  font-size: 40px;
+  font-weight: 200;
+  margin-bottom: 50px;
+}
+
+h3 {
+  font-size: 18px;
+  text-transform: uppercase;
+}
+
+p {
+  font-size: 20px;
+  font-weight: 200;
+  color: black;
+}
+
+/* Text boxen runt texterna i about-me sektionen och greatness sektionen. */
+
+.text-container {
+  width: 60%;
+  margin: 0 auto;
+}
+
+/* About-me sektionen */
+
+.about-me {
+  background-color: #ff726c;
+  padding: 150px 30px;
+  color: white;
+  text-align: center;
+}
+
+/* Bilden i about-me sektionen */
+
+.about-me img {
+  width: 180px;
+  border-radius: 50%;
+  display: block;
+  margin: 0 auto;
+}
+
+/* Greatness sektionen */
+
+.greatness {
+  padding: 150px 30px;
+  width: 60%;
+  margin: 0 auto;
+}
+
+/* Footern */
+
+footer {
+  background-color: #fbcfcd;
+  padding: 150px 300px;
+}
+
+.socialMedia {
+  text-align: center;
+  font-size: 30px;
+  color: white;
+}
