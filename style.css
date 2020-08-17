@@ -134,6 +134,9 @@ p {
 .gallery {
   position: relative;
   width: 100%;
+  margin: 50px;
+  background-color: white;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
 .gallery img {
@@ -186,6 +189,10 @@ a:link {
 a:visited {
   color: white;
   text-decoration: none;
+}
+
+a:hover {
+  color: #f8f3ed;
 }
 
 /* Footern */
