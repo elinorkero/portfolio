@@ -1,3 +1,7 @@
+html {
+	scroll-behavior: smooth;
+}
+
 /* Styling som gäller för hela sidan */
 body {
   box-sizing: border-box;
@@ -6,6 +10,42 @@ body {
   margin: 0;
 }
 
+/* Navbar */
+
+.navbar {
+  height: 50px;
+  background-color: white;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: flex-end;
+  align-items: center;
+  border-bottom-color: #f8f3ed;
+  position: fixed; /* Set the navbar to fixed position */
+  top: 0; /* Position the navbar at the top of the page */
+  width: 100%; /* Full width */
+          }
+
+  a:link {
+    color: #ff726c;
+    padding: 20px;
+    text-decoration: none;
+    background-color: transparent;
+  }
+
+  a:visited {
+    color: #ff726c;
+    text-decoration: none;
+  }
+
+  
+  a:hover {
+    color: white;
+    background-color: #ff726c;
+    text-decoration: none;
+  }
+
+  
 /* Knappen */
 
 .button {
