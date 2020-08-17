@@ -13,7 +13,7 @@ body {
 /* Navbar */
 
 .navbar {
-  height: 50px;
+  height: 59px;
   background-color: white;
   display: flex;
   flex-direction: row;
@@ -28,6 +28,7 @@ body {
 
   .navbar a:link {
     color: #ff726c;
+    font-size: 15x;
     padding: 20px;
     text-decoration: none;
     background-color: transparent;
