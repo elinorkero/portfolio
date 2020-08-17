@@ -24,6 +24,7 @@ body {
   position: fixed; /* Set the navbar to fixed position */
   top: 0; /* Position the navbar at the top of the page */
   width: 100%; /* Full width */
+  z-index: 9;
           }
 
   .navbar a:link {
@@ -122,12 +123,69 @@ p {
   margin: 0 auto;
 }
 
-/* Greatness sektionen */
+/* Portfolio sektionen */
 
-.greatness {
+.portfolio {
   padding: 150px 30px;
   width: 60%;
   margin: 0 auto;
+}
+
+.gallery {
+  position: relative;
+  width: 100%;
+}
+
+.gallery img {
+  opacity: 1;
+  display: block;
+  width: 100%;
+  height: auto;
+  transition: .5s ease;
+  backface-visibility: hidden;
+}
+
+.middle {
+  transition: .5s ease;
+  opacity: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%)
+}
+
+.gallery:hover .image {
+  opacity: 0.3;
+}
+
+.gallery:hover .middle {
+  opacity: 1;
+}
+
+.link {
+  background-color: grey;
+  color: white;
+  font-size: 16px;
+  padding: 16px 32px;
+}
+
+div.desc {
+  padding: 15px;
+  text-align: center;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+a:link {
+  color: white;
+  text-decoration: none;
+}
+a:visited {
+  color: white;
+  text-decoration: none;
 }
 
 /* Footern */
