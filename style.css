@@ -13,7 +13,7 @@ body {
 /* Navbar */
 
 .navbar {
-  height: 50px;
+  height: 59px;
   background-color: white;
   display: flex;
   flex-direction: row;
@@ -26,20 +26,21 @@ body {
   width: 100%; /* Full width */
           }
 
-  a:link {
+  .navbar a:link {
     color: #ff726c;
+    font-size: 15x;
     padding: 20px;
     text-decoration: none;
     background-color: transparent;
   }
 
-  a:visited {
+  .navbar a:visited {
     color: #ff726c;
     text-decoration: none;
   }
 
   
-  a:hover {
+  .navbar a:hover {
     color: white;
     background-color: #ff726c;
     text-decoration: none;
@@ -49,9 +50,23 @@ body {
 /* Knappen */
 
 .button {
+  background-color: #ff726c;
+  color: white;
+  padding: 25px;
+  border-color: white;
+  border: 2px solid;
+  border-radius: 40px;
+  text-transform: uppercase;
+  text-decoration: none;
+  font-weight: 600;
+}
+
+.button:hover {
   background-color: white;
   color: #ff726c;
   padding: 25px;
+  border-color: white;
+  border: 2px solid;
   border-radius: 40px;
   text-transform: uppercase;
   text-decoration: none;
