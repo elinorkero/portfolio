@@ -18,7 +18,7 @@ body {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
-  justify-content: flex-end;
+  justify-content: space-between;
   align-items: center;
   border-bottom-color: #f8f3ed;
   position: fixed; /* Set the navbar to fixed position */
@@ -26,6 +26,10 @@ body {
   width: 100%; /* Full width */
   z-index: 9;
           }
+
+          .push {
+            margin-left: auto;
+        }
 
   .navbar a:link {
     color: #ff726c;
@@ -45,6 +49,14 @@ body {
     color: white;
     background-color: #ff726c;
     text-decoration: none;
+  }
+
+  .logo {
+  height: 59px;
+}
+
+  .logo img {
+    height: 100%;
   }
 
   
