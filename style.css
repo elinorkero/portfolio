@@ -1,19 +1,26 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
 html {
 	scroll-behavior: smooth;
 }
 
 /* Styling som gäller för hela sidan */
 body {
-  box-sizing: border-box;
+  max-width: 1440px;
+  margin: 0 auto;
   font-family: Helvetica, "sans serif";
-  color: #ff726c;
-  margin: 0;
+  color: #999b84;
 }
-
 /* Navbar */
 
 .navbar {
-  height: 59px;
+  max-width: 1440px;
+  margin:0 auto;
+  height: 70px;
   background-color: white;
   display: flex;
   flex-direction: row;
@@ -26,34 +33,36 @@ body {
   width: 100%; /* Full width */
   z-index: 9;
           }
-
           .push {
             margin-left: auto;
-        }
+          }
+  
 
   .navbar a:link {
-    color: #ff726c;
-    font-size: 15x;
-    padding: 20px;
+    color: #ddb7ab;
+    font-size: 20px;
     text-decoration: none;
     background-color: transparent;
+    padding: 20px;
   }
 
+
   .navbar a:visited {
-    color: #ff726c;
+    color: #ddb7ab;
     text-decoration: none;
   }
 
   
   .navbar a:hover {
     color: white;
-    background-color: #ff726c;
+    background-color: #ddb7ab;
     text-decoration: none;
+    height: 100%;
   }
 
   .logo {
-  height: 59px;
-}
+  height: 70px;
+  }
 
   .logo img {
     height: 100%;
@@ -62,12 +71,100 @@ body {
   .logo a:hover {
     background-color: transparent;
   }
-
   
+  @media screen and (max-width: 613px) {
+    .navbar {
+      height: 50px;
+    }
+    .navbar a:link {
+      font-size: 10px;
+      padding-right: 10px;
+    }
+    .logo {
+      height: 50px;
+    }
+  }
+
+/* Alla rubriker och texter */
+
+h1 {
+  font-size: 65px;
+}
+
+h2 {
+  font-size: 40px;
+  font-weight: 200;
+  margin-bottom: 50px;
+}
+
+h3 {
+  font-size: 25px;
+  text-transform: uppercase;
+}
+
+p {
+  font-size: 20px;
+  font-weight: 200;
+  color: black;
+}
+
+/* Text boxen runt texterna i about-me sektionen och greatness sektionen. */
+
+.greeting {
+  width: 90%;
+  margin: 0 auto;
+}
+
+/* Top-section */
+
+.top-section {
+  background-color: #ddb7ab;
+  background-image: url("img/plant.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  position: relative;
+  height: 800px;
+  padding: 150px 30px;
+  color: white;
+  text-align: left;
+}
+
+.top-section h1{
+  padding-top: 50px;
+  font-size: 70px;
+}
+
+@media screen and (max-width: 747px) {
+  .top-section h1 {
+    font-size: 45px;
+    margin: 20px 50px;
+  }
+  .top-section h2 {
+    font-size: 25px;
+    margin: 20px 50px 60px; 
+  }
+}
+
+@media screen and (max-width: 613px) {
+  .top-section h1 {
+    font-size: 40px;
+  }
+  .top-section h2 {
+    font-size: 20px;
+  }
+}
+
+@media screen and (max-width: 563px) {
+  .top-section h1 {
+    font-size: 33px;
+  }
+}
+
 /* Knappen */
 
 .button {
-  background-color: #ff726c;
+  background-color: transparent;
   color: white;
   padding: 25px;
   border-color: white;
@@ -80,7 +177,7 @@ body {
 
 .button:hover {
   background-color: white;
-  color: #ff726c;
+  color: #ddb7ab;
   padding: 25px;
   border-color: white;
   border: 2px solid;
@@ -90,67 +187,60 @@ body {
   font-weight: 600;
 }
 
-/* Alla rubriker och texter */
-
-h1 {
-  margin: 20px;
-  font-size: 65px;
+@media screen and (max-width: 747px) {
+  .button {
+    font-size: 15px;
+    margin-left: 50px;
+    padding: 25px;
+  }
+}
+@media screen and (max-width: 613px) {
+  .button {
+    font-size: 12px;
+  }
+}
+@media screen and (max-width: 563px) {
+  .button {
+    font-size: 10px;
+  }
 }
 
-h2 {
-  font-size: 40px;
-  font-weight: 200;
-  margin-bottom: 50px;
+@media screen and (max-width: 280px) {
+  .button {
+    font-size: 8px;
+  }
 }
 
-h3 {
-  font-size: 18px;
-  text-transform: uppercase;
-}
-
-p {
-  font-size: 20px;
-  font-weight: 200;
-  color: black;
-}
-
-/* Text boxen runt texterna i about-me sektionen och greatness sektionen. */
-
-.text-container {
-  width: 60%;
-  margin: 0 auto;
-}
-
-/* About-me sektionen */
-
-.about-me {
-  background-color: #ff726c;
-  padding: 150px 30px;
-  color: white;
-  text-align: center;
-}
-
-/* Bilden i about-me sektionen */
-
-.about-me img {
-  width: 180px;
-  border-radius: 50%;
-  display: block;
-  margin: 0 auto;
-}
 
 /* Portfolio sektionen */
 
 .portfolio {
-  padding: 150px 30px;
-  width: 60%;
+  padding: 150px 0px;
   margin: 0 auto;
+  width: 80%;
+}
+
+.portfolio p {
+  font-size: 20px;
+}
+
+.items {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+@media screen and (max-width: 764px) {
+  .items {
+    flex-direction: column;
+  }
 }
 
 .gallery {
   position: relative;
   width: 100%;
-  margin: 50px 0px;
+  margin: 30px 20px;
   background-color: white;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
@@ -194,10 +284,6 @@ div.desc {
   text-align: center;
 }
 
-* {
-  box-sizing: border-box;
-}
-
 a:link {
   color: white;
   text-decoration: none;
@@ -220,7 +306,7 @@ a:hover {
   height: auto;
   background-color: white;
   padding: 150px 30px;
-  color: #ff726c;
+  color: #ddb7ab;
   
           }
 
@@ -276,8 +362,9 @@ input[type=submit] {
 /* Footern */
 
 footer {
-  background-color: #fbcfcd;
-  padding: 150px 300px;
+  background-color: #efd9d1;
+  padding: 150px 50px;
+  width: 100%;
 }
 
 .socialMedia {
@@ -285,3 +372,10 @@ footer {
   font-size: 30px;
   color: white;
 }
+
+/* Media Query */
+
+@media screen and (max-width: 800px) {
+
+}
+
