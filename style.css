@@ -13,7 +13,7 @@ body {
   max-width: 1440px;
   margin: 0 auto;
   font-family: Helvetica, "sans serif";
-  color: #999b84;
+  color: black;
 }
 /* Navbar */
 
@@ -84,6 +84,7 @@ body {
       height: 50px;
     }
   }
+  
 
 /* Alla rubriker och texter */
 
@@ -120,6 +121,7 @@ p {
 .top-section {
   background-color: #ddb7ab;
   background-image: url("img/plant.jpg");
+  background-attachment: fixed;
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -136,6 +138,10 @@ p {
 }
 
 @media screen and (max-width: 747px) {
+  .top-section {
+    height: 650px;
+  }
+
   .top-section h1 {
     font-size: 45px;
     margin: 20px 50px;
@@ -147,6 +153,9 @@ p {
 }
 
 @media screen and (max-width: 613px) {
+  .top-section {
+    padding: 90px 0px;
+  }
   .top-section h1 {
     font-size: 40px;
   }
@@ -158,6 +167,11 @@ p {
 @media screen and (max-width: 563px) {
   .top-section h1 {
     font-size: 33px;
+  }
+}
+@media screen and (max-width: 414px) {
+  .top-section h1 {
+    font-size: 28px;
   }
 }
 
@@ -273,10 +287,13 @@ p {
 }
 
 .link {
-  background-color: grey;
+  background-color: #efd9d1;
   color: white;
   font-size: 16px;
   padding: 16px 32px;
+  text-align: center;
+  border: 2px solid;
+  border-radius: 40px;
 }
 
 div.desc {
@@ -293,9 +310,6 @@ a:visited {
   text-decoration: none;
 }
 
-a:hover {
-  color: #f8f3ed;
-}
 
 /* Kontaktformuläret */
 
@@ -367,10 +381,24 @@ footer {
   width: 100%;
 }
 
-.socialMedia {
+.contact {
+  color: white;
+  display: column;
   text-align: center;
+}
+
+.socialMedia {
+  padding: 20px;
   font-size: 30px;
   color: white;
+}
+
+.socialMedia a {
+  padding: 10px;
+}
+
+.socialMedia a:hover {
+  color: black;
 }
 
 /* Media Query */
