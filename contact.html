@@ -2,22 +2,14 @@
 <html lang="en">
 
 <head>
-     <!-- Global site tag (gtag.js) - Google Analytics -->
-     <script async src="https://www.googletagmanager.com/gtag/js?id=UA-175701872-1"></script>
-     <script>
-       window.dataLayer = window.dataLayer || [];
-       function gtag(){dataLayer.push(arguments);}
-       gtag('js', new Date());
-     
-       gtag('config', 'UA-175701872-1');
-     </script>
 
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <script src="https://kit.fontawesome.com/14a99c3342.js" crossorigin="anonymous"></script>
 
-    <link rel="stylesheet" href="style.css" type="text/css">
+    <link rel="stylesheet" href="css/style.css" type="text/css">
+    <link rel="stylesheet" href="css/menu.css">
     <link rel='icon' href='img/ek.png' type='image/x-icon' >
     <title>Contact</title>
 
@@ -41,17 +33,28 @@
 </head>
 
 <body>
-    <div class="navbar">
-        <div class="logo"><a href="index.html"><img src="img/logotype.png"></div></a>
-    </div>
-
+    <div class="menu-wrap">
+        <input type="checkbox" class="toggler">
+        <div class="hamburger"><div></div></div>
+        <div class="menu">
+              <div>
+                    <div>
+                          <ul>
+                                <li><a href="/index">Hem</a></li>
+                                <li><a href="#">Om mig</a></li>
+                                <li><a href="/contact">Kontakt</a></li>
+                          </ul>
+                    </div>
+              </div>
+        </div>
+  </div>
     <div section="contact">
 
         <div id="contact">
             <div id="kontaktform">
                 <h1>Kontakt</h1>
                 <p>Vill du veta mer, eller kanske jobba tillsammans med mig? <br>
-                    Skicka ett meddelande vetja :)</p>
+                    Skicka ett meddelande vetja :)</p><br>
                 
                 <form action="mailto:elinor.kero@cmeducations.se" method="post" enctype="text/plain">
                     Namn: <br>
