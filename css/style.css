@@ -155,6 +155,35 @@ p {
   }
 }
 
+/* Skills sektionen */
+
+.skills {
+  background-color: #ddb7ab;
+  height: auto;
+  padding: 150px 30px;
+  color: white;
+}
+
+
+.skillsIcons {
+  display: block;
+  position: relative;
+  margin: 0 auto;
+}
+
+.row {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-evenly;
+}
+
+.fas {
+  font-size: 50px;
+}
+
+.fab {
+  font-size: 50px;
+}
 
 /* Portfolio sektionen */
 
