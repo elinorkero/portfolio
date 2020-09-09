@@ -23,7 +23,7 @@ h1 {
 }
 
 h2 {
-  font-size: 30px;
+  font-size: 25px;
   font-weight: 200;
   margin-bottom: 50px;
 }
@@ -165,7 +165,7 @@ p {
 }
 
 .portfolio p {
-  font-size: 20px;
+  font-size: 14px;
 }
 
 .items {
@@ -216,15 +216,26 @@ p {
   opacity: 1;
 }
 
-/* .link {
-  background-color: #efd9d1;
-  color: white;
+.link {
+  background-color: white;
+  padding: 20px;
+  border-radius: 50px;
+  color: black;
   font-size: 16px;
-  padding: 16px 32px;
-  text-align: center;
-  border: 2px solid;
-  border-radius: 40px;
-} */
+}
+
+.link a {
+  text-decoration: none;
+}
+
+.link a:hover {
+  text-decoration: none;
+}
+
+.link a:visited {
+  color: #e7c7bb;
+  text-decoration: none;
+}
 
 div.desc {
   padding: 15px;
@@ -306,29 +317,121 @@ input[type=submit] {
 /* Footern */
 
 footer {
-  background-color: #efd9d1;
+  background-color: #e7c7bb;
   padding: 150px 50px;
   width: 100%;
 }
 
-.contact {
-  color: white;
-  display: column;
+.nav {
+  display: flex;
+  justify-content: space-between;
+}
+
+.sitemap {
+  padding: 20px;
+}
+
+.sitemap a {
+  padding: 20px;
+  color: #fff;
+  text-decoration: none;
+}
+
+.sitemap a:hover {
+  background-color: white;
+  color: #e7c7bb;
+  border-radius: 50px 30px;
+}
+
+.copyright {
   text-align: center;
 }
 
+.copyright p {
+  color: white;
+  font-size: 0.8rem;
+}
+
 .socialMedia {
+  text-align: center;
   padding: 20px;
   font-size: 30px;
   color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
 }
 
 .socialMedia a {
   padding: 10px;
   color: white;
+  text-align: center;
 }
 
 .socialMedia a:hover {
-  color: black;
+  background: #fff;
+  color: #e7c7bb;
+  border-radius: 50px 30px;
+}
+
+
+@media screen and (max-width: 590px) {
+  .socialMedia {
+    justify-content: unset;
+  }
+  .sitemap p {
+    font-size: 1rem;
+  }
+  .socialMedia h3 {
+    font-size: 1rem;
+  }
+  .socialMedia a {
+    font-size: 1rem;
+  }
+}
+
+@media screen and (max-width: 465px) {
+  .sitemap p {
+    font-size: 0.8rem;
+  }
+  .socialMedia h3 {
+    font-size: 0.8rem;
+  }
+  .socialMedia a {
+    font-size: 0.8rem;
+  }
+}
+
+@media screen and (max-width: 416px) {
+  
+  .sitemap {
+    padding: 0px;
+  }
+  .socialMedia {
+    padding: 0px;
+  }
+  .sitemap p {
+    padding: 0px;
+    font-size: 0.7rem;
+  }
+  .socialMedia h3 {
+    padding: 0px;
+    font-size: 0.7rem;
+  }
+  .socialMedia a {
+    padding: 0px;
+    border-radius: 0;
+  }
+}
+@media screen and (max-width: 313px) {
+  .sitemap p {
+    font-size: 0.5rem;
+  }
+  .socialMedia h3 {
+    font-size: 0.5rem;
+  }
+  .socialMedia a {
+    font-size: 0.5rem;
+  }
 }
 
